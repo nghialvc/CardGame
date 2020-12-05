@@ -9,10 +9,10 @@
 
 <body class="bg-primary">
 	<div class="container-fluid text-center" style="margin-top:10px;">
-    	<img class="img-card" src="../Downloads/K0.png" />
-    	<img class="img-card" src="../Downloads/K0.png" style="margin-left:-100px;"/>
-    	<img class="img-card" src="../Downloads/K0.png" style="margin-left:-100px;"/>
-    	<img class="img-card" src="../Downloads/K0.png" style="margin-left:-100px;"/>
+    	<img class="img-card" src="./K0.png" />
+    	<img class="img-card" src="./K0.png" style="margin-left:-100px;"/>
+    	<img class="img-card" src="./K0.png" style="margin-left:-100px;"/>
+    	<img class="img-card" src="./K0.png" style="margin-left:-100px;"/>
     </div>
     <div style="position:fixed;bottom:50px;left:0px;right:0px;">
     <div class="container-fluid text-center">
@@ -32,7 +32,7 @@ function showImage(value)
 	var imgs = document.getElementsByClassName("img-card");
 	for (i = 0; i < value.length; i++)
 	{
-		imgs.item(i).src = "C:\\Users\\Administrator\\Downloads\\K"+value[i]+".png";
+		imgs.item(i).src = "./K"+value[i]+".png";
 	}
 }
 

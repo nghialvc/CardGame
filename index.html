@@ -45,12 +45,13 @@ function randomImage(minvalue, maxvalue)
 		while (v==1) v = Math.floor(Math.random()*(parseInt(maxvalue[i])-parseInt(minvalue[i])+1))+parseInt(minvalue[i]);
 		val += v;
 	}
-	console.log(val);
+	return val;
 }
 
 function btnRandomClick()
 {
-	randomImage(txbmin.value,txbmax.value);
+	var val = randomImage(txbmin.value,txbmax.value);
+	showImage(val);
 }
 
 showImage("0234");

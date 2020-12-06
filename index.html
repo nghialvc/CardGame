@@ -32,7 +32,9 @@ function showImage(value)
 	var imgs = document.getElementsByClassName("img-card");
 	for (i = 0; i < value.length; i++)
 	{
-		imgs.item(i).src = "./K"+value[i]+".png";
+                var s = value[i];
+                if (s=="5") s = "0";
+		imgs.item(i).src = "./K"+s+".png";
 	}
 }
 

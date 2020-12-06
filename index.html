@@ -42,7 +42,6 @@ function randomImage(minvalue, maxvalue)
 	for (i = 0; i < 4; i++)
 	{
 		var v = Math.floor(Math.random()*(parseInt(maxvalue[i])-parseInt(minvalue[i])+1))+parseInt(minvalue[i]);
-		while (v==1) v = Math.floor(Math.random()*(parseInt(maxvalue[i])-parseInt(minvalue[i])+1))+parseInt(minvalue[i]);
 		val += v;
 	}
 	return val;
@@ -54,6 +53,6 @@ function btnRandomClick()
 	showImage(val);
 }
 
-showImage("0234");
+showImage("2345");
 </script>
 </html>

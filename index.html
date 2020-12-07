@@ -40,13 +40,7 @@ function showImage(value)
 
 function randomImage(minvalue, maxvalue)
 {
-	var val = "";
-	for (i = 0; i < 4; i++)
-	{
-		var v = Math.floor(Math.random()*(parseInt(maxvalue[i])-parseInt(minvalue[i])+1))+parseInt(minvalue[i]);
-		val += v;
-	}
-	return val;
+	return Math.floor(Math.random()*(parseInt(maxvalue)-parseInt(minvalue)+1))+parseInt(minvalue);
 }
 
 function btnRandomClick()

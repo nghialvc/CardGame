@@ -38,9 +38,25 @@ function showImage(value)
 	}
 }
 
+function isTrue(val)
+{
+	if (val.search("0") != -1 || val.search("1") != -1 || val.search("6") != -1 || val.search("7") != -1 || val.search("8") != -1 || val.search("9") != -1)
+	return false
+	return true;
+}
+
 function randomImage(minvalue, maxvalue)
 {
-	return Math.floor(Math.random()*(parseInt(maxvalue)-parseInt(minvalue)+1))+parseInt(minvalue);
+	var minv  = parseInt(minvalue);
+	var maxv = parseInt(maxvalue);
+	var v = Math.floor(Math.random()*(maxv-minv+1))+minv;
+	var val = ""+v;
+	while (isTrue(val) == false)
+	{
+		v = Math.floor(Math.random()*(maxv-minv+1))+minv;
+		val = ""+v;
+	}
+	return val;
 }
 
 function btnRandomClick()
